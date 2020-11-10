@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <span>LOGIN PAGE</span>
+</mat-toolbar>
+<mat-card class="my-card">
+   <mat-card-content>
+      <form class="my-form">
+         <mat-form-field class="full-width">
+            <mat-label>Username</mat-label>
+            <input  matInput  placeholder="USERNAME" name="username">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+            <input  matInput  placeholder="Password" name="password">
+         </mat-form-field>
+      </form>
+   </mat-card-content>
+   <mat-card-actions>
+      <button mat-raised-button (click)="login()" color="primary">LOGIN PAGE</button>
+   </mat-card-actions>
+</mat-card>
+<mat-paginator [length]="200"
+              [pageSize]="10"
+              [pageSizeOptions]="[10, 20, 30, 200]">
+</mat-paginator>
+
+
